@@ -27,13 +27,13 @@ resource "aws_subnet" "subnet_frank_public" {
   #}
 #}
 
-#resource "aws_internet_gateway" "igw_frank" {
- # vpc_id = aws_vpc.vpc_frank.id
+resource "aws_internet_gateway" "igw_frank" {
+  vpc_id = aws_vpc.vpc_frank.id
 
-  #tags = {
-   # Name = "iac_aws_github_actions-igw"
-  #}
-#}
+  tags = {
+    Name = "iac_aws_github_actions-igw"
+  }
+}
 
 
 
